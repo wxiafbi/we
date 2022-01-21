@@ -1,0 +1,14 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "gcc", //任务标签，与launch.json中的 "preLaunchTask"对应
+            "type": "shell",  //定义该命令时shell命令还是进程运行
+            "command": "gcc", //输入shell执行的命令，c++为g++, c为gcc
+            "args": ["-g","${file}","-o","${fileBasenameNoExtension}.exe"]    // 编译命令参数
+            
+        }
+    ]
+}
